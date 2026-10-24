@@ -1,0 +1,10 @@
+# Shell scripts must keep LF endings on every platform.
+#
+# The UAT walkthroughs under tests/UAT are run with Git Bash on Windows as often
+# as with a Linux shell, and this repository is developed with core.autocrlf=true,
+# which would otherwise check them out with CRLF. A CRLF shebang line makes the
+# interpreter unfindable, and tests/test_uat_scripts.py asserts LF endings.
+*.sh text eol=lf
+
+# The 1x1 PNG the attachment guides upload; never touch its bytes.
+*.png binary

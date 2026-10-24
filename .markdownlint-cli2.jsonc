@@ -1,0 +1,9 @@
+{
+  // Rule configuration lives in .markdownlint.json so editors pick it up too.
+  // This file only scopes which files markdownlint-cli2 walks.
+  "gitignore": true,
+  "ignores": [
+    ".venv/**",
+    "node_modules/**"
+  ]
+}
